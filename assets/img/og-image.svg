@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="1" stop-color="#111c3f"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1000" cy="100" r="220" fill="#2563eb" opacity=".15"/>
+  <rect x="120" y="130" width="960" height="370" rx="24" fill="#0f172a" opacity=".9" stroke="#334155"/>
+  <text x="180" y="255" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="700">Alfahone</text>
+  <text x="180" y="320" fill="#93c5fd" font-family="Inter, Arial, sans-serif" font-size="34">Agentes de IA, automações e soluções digitais</text>
+  <rect x="180" y="370" width="470" height="14" rx="7" fill="url(#acc)"/>
+</svg>
