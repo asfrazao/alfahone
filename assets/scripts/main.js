@@ -5,9 +5,14 @@ const year = document.getElementById('year');
 const revealItems = document.querySelectorAll('.reveal');
 const navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
 
-const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 12);
-window.addEventListener('scroll', onScroll, { passive: true });
-onScroll();
+if (header) {
+  const onScroll = () => {
+    header.classList.toggle('scrolled', window.scrollY > 12);
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
 
 if (menuToggle && nav) {
   menuToggle.addEventListener('click', () => {
@@ -19,7 +24,7 @@ if (menuToggle && nav) {
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    if (nav.classList.contains('open')) {
+    if (nav && menuToggle && nav.classList.contains('open')) {
       nav.classList.remove('open');
       menuToggle.setAttribute('aria-expanded', 'false');
     }

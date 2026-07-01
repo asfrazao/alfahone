@@ -6,7 +6,7 @@ Site institucional estático da Alfahone, focado em conversão para contato come
 - HTML5 semântico
 - CSS3 moderno (sem framework pesado)
 - JavaScript moderno (vanilla JS)
-- Google Fonts (Inter e Sora)
+- Google Fonts (Inter)
 
 ## Estrutura de pastas
 ```text
@@ -17,13 +17,22 @@ Site institucional estático da Alfahone, focado em conversão para contato come
 |-- manifest.webmanifest
 |-- README.md
 `-- assets/
-    |-- css/styles.css
-    |-- js/main.js
-    `-- img/
-        |-- favicon.svg
-        |-- og-image.svg
-        |-- icon-192.svg
-        `-- icon-512.svg
+    |-- scripts/
+    |   `-- main.js
+    |-- styles/
+    |   `-- main.css
+    `-- images/
+        |-- brand/
+        |   |-- logo-full.png
+        |   `-- logo-symbol.png
+        |-- icons/
+        |   |-- app-icon-192.svg
+        |   |-- app-icon-512.svg
+        |   |-- favicon.svg
+        |   |-- flow-chat.png
+        |   `-- whatsapp-floating.svg
+        `-- social/
+            `-- open-graph.svg
 ```
 
 ## Como rodar localmente
@@ -44,7 +53,7 @@ Site institucional estático da Alfahone, focado em conversão para contato come
 - [x] `robots` index/follow
 - [x] Open Graph
 - [x] Twitter Cards
-- [x] JSON-LD (`ProfessionalService`)
+- [x] JSON-LD (`Organization`)
 - [x] `sitemap.xml`
 - [x] `robots.txt`
 - [x] Hierarquia correta de headings e apenas um H1
@@ -71,7 +80,7 @@ Site institucional estático da Alfahone, focado em conversão para contato come
 - [x] Sem bibliotecas pesadas
 - [x] Layout responsivo mobile-first
 - [x] Animações leves via CSS/IntersectionObserver
-- [x] Elementos visuais em SVG/CSS (baixo peso)
+- [x] Assets visuais locais e enxutos
 
 ## Observações
 - Este projeto não possui backend.
